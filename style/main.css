@@ -1,0 +1,336 @@
+/* =============== Config styles ========*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 1280px;
+
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+/* ================ Header =========== */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: url(../img/sea.jpeg) no-repeat top center;
+}
+.header__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    background-color: #55ADB7;
+}
+/*========= Header-Navigation ==========*/
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav {
+    padding: 28px 0px;  
+}
+.header__logo {
+    font-size: calc(10px + 2vw);
+    font-family: 'Cherry Swash', cursive;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.header__link {
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    margin: 0 20px;
+    font-size: calc(10px + 0.5vw);
+    color: #DCE3E4;
+    text-transform: uppercase;
+}
+.header__link::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -20px;
+
+    width: 2px;
+    height: 15px;
+    transform: rotate(22deg);
+    background-color: #DCE3E4;
+}
+.header__link:hover {
+    color: #3b3207;
+}
+.header__link:first-child::after {
+    content: "";
+    position: static;
+}
+/*========= Header ==========*/
+.header__tittle {
+    padding-top: 129px;
+
+    font-size: calc(10px + 2.2vw);
+    text-transform: uppercase;
+    color: #E4E4E4;
+}
+.header__button {
+    margin-top: 46px;
+    width: 234px;
+    height: 47px;
+
+    background: transparent;
+    outline: none;
+    border: 3px solid #AFB1B4;
+    border-radius: 5%;
+    cursor: pointer;
+
+    font-size: calc(10px + 1.4vw);
+    font-weight: 300;
+    color: #E4E4E4;
+
+}
+.header__button:hover {
+    background-color: #4b6368;
+}
+.header__list {
+    display: flex;
+    padding: 121px 0px 25px;
+}
+.header__item {
+    width: 9px;
+    height: 9px;
+    margin-left: 12px;
+
+    background-color: #fff;
+    border-radius: 50%;
+}
+.header__item:first-child {
+    margin-left: 0px;
+}
+.item-grey {
+    background-color: #69728C;
+}
+/* =========== Main ================*/
+/* ============= Things ==============*/
+.things {
+    width: 100%;
+}
+.things__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.things__tittle {
+    padding: 100px 0px 0px 0px;
+
+    font-size: calc(10px + 1.3vw);
+    font-weight: 300;
+    color: #4C505D;
+}
+.things__text {
+    padding-top: 39px;
+
+    text-align: center;
+    font-size: calc(10px + 0.3vw);
+    color: #4C505D;
+}
+.things__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 70px 0 80px;
+}
+.things__img {
+    margin: 0px 62px;
+}
+.img-basket {
+    width: 57px;
+    height: 51px;
+
+    background: url(../img/icon/basket.png) no-repeat center center;
+}
+.img-earth {
+    width: 56px;
+    height: 56px;
+
+    background: url(../img/icon/earth.png) no-repeat center center;
+}
+.img-suitcase {
+    width: 53px;
+    height: 51px;
+
+    background: url(../img/icon/suitcase.png) no-repeat center center;
+}
+/* ============= Opinion ==============*/
+.opinion {
+    width: 100%;
+
+    background-color: #00D089;
+}
+.opinion__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opinion__header {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 97px;
+    margin-bottom: 62px;
+}
+.opinion__img {
+    width: 135px;
+    height: 135px;
+
+    border-radius: 50%;
+    background: url(../img/man.png) no-repeat top center;
+}
+.opinion__name {
+    position: absolute;
+    left: 120px;
+
+    padding-top: 11px;
+    margin-left: 38px;
+}
+.opinion__tittle {
+    
+    font-size: calc(10px + 1.2vw);
+    font-weight: 700;
+    color: #E4E4E4;
+}
+.opinion__quate {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+
+    font-size: 250px;
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+.opinion__text {
+    margin-bottom: 94px;
+
+    text-align: left;
+    font-size: calc(10px + 0.6vw);
+    font-weight: 300;
+    color: #FFFFFF;
+}
+/* =========== Map ============*/
+.map {
+    display: flex;
+    justify-content: center;
+    background: url(../img/map.jpeg) no-repeat bottom center;
+}
+.map__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 51px 0px 34px;
+    width: 431px;
+    height: 431px;
+
+    background-color: #FFFFFF;
+    opacity: 0.85;
+    border-radius: 50%;
+}
+.map__input {
+    width: 276px;
+    height: 32px;
+    padding-left: 14px;
+    margin-bottom: 15px;
+
+    font-size: calc(10px + 0.3vw);
+    color: #4C505D; 
+    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.map__textarea {
+    width: 276px;
+    height: 81px;
+    margin-bottom: 32px;
+    padding: 13px 15px;
+
+    font-size: calc(10px + 0.3vw);
+    color: #4C505D; 
+    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    resize: none;
+}
+.map__circle {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 67px;
+    height: 68px;
+
+    border-radius: 50%;
+    background-color: #00D089;
+    cursor: pointer;
+}
+.tick {
+    position: absolute;
+    top: 35px;
+    left: 12px;
+
+    width: 27px;
+    height: 10px;
+
+    background: #FFFFFF;    
+    transform:rotate(45deg);
+    border-radius: 15%;
+}
+
+.tick::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: -17px;
+
+    width: 30px;
+    height: 10px;   
+
+    background: #FFFFFF;
+    transform: rotate(90deg);
+    border-radius: 15%;
+}
+/* =========== Footer ================*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00D089;
+}
+.footer__text {
+    padding: 15px 0;
+
+    color: #FFF;
+    font-size: calc(10px + 0.3vw);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*font-family: 'Cherry Swash', cursive;
+font-family: 'Lato', sans-serif; */

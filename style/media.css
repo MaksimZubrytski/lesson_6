@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+.header__gamburger {
+    position: relative;
+    bottom: 5px;
+    left: 0px;
+    width: 50px;
+    height: 8px;
+    background-color: #fff;
+}
+.header__gamburger::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    width: 50px;
+    height: 8px;
+    background: #FFF;
+}
+.header__gamburger::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+    width: 50px;
+    height: 8px;
+    background: #FFF;
+}
+.header__link {
+    display: none;
+}
+.things__img {
+    margin: 0px 20px;
+}
+.map__form {
+    width: 50vw;
+    height: 50vw;
+}
+.map__input {
+    margin: 5px auto;
+    width: 25vw;
+    height: 4vw;
+}
+.map__textarea {
+    margin: 5px auto;
+    width: 25vw;
+    height: 8vw;
+}
+.map__circle {
+    width: 10vw;
+    height: 10vw;
+}
+.tick {
+    position: absolute;
+    background: #FFFFFF;
+    width: 16px;
+    height: 7px;    
+    transform:rotate(45deg);
+    top: 35px;
+    left: 18px;
+    border-radius: 15%;
+}
+
+.tick::after {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    width: 20px;
+    height: 7px;    
+    transform: rotate(90deg);
+    left: 2px;
+    top: -12px;
+    border-radius: 15%;
+}
+.opinion__name {
+    position: absolute;
+    left: 105px;
+}
+.opinion__quate {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    left: 1px;
+}
+}
+@media (max-width: 576px) {
+.things__img {
+    margin: 0px 15px;
+}
+.opinion__name {
+    position: absolute;
+    left: 105px;
+}
+.opinion__quate {
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    left: 1px;
+}
+.tick {
+    position: absolute;
+    background: #FFFFFF;
+    width: 14px;
+    height: 6px;    
+    transform:rotate(45deg);
+    top: 15px;
+    left: 4px;
+    border-radius: 15%;
+}
+
+.tick::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -8px;
+
+    width: 18px;
+    height: 6px;    
+
+    border-radius: 15%;
+}
+.map__input {
+    padding-left: 1px;
+}
+.map__textarea {
+    padding: 1px 1px;
+}
+
+}
