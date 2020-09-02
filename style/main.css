@@ -30,6 +30,9 @@ ul {
     background: url(../img/sea.jpeg) no-repeat top center;
 }
 .header__header {
+    position: sticky;
+    top: 0px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
